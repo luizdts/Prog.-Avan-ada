@@ -1,9 +1,9 @@
-p = i;
-q = &j;
-p = &*&i;
-i = (*&)j;
-i = *&j;
-i = *&*&j;
-q = *p;
-i = (*p)++ + *q;
+p = i; // Declaração ilegal, pois não faz referência ao endereçamento de i para o ponteiro p, armazenando assim um valor inteiro.
+q = &j; // Declaração legal, o ponteiro q possui referência ao endereço de j.
+p = &*&i; // Declaração legal, o ponteiro p recebe o endereço de i, já que * se anula com um dos &.
+i = (*&)j; // Declaração ilegal, i não recebe o valor de j, os operadores * e & não funcionam dentro de parênteses.
+i = *&j; // Declaração legal, i recebe j.
+i = *&*&j; // Declaração legal, i recebe j.
+q = *p; // Declaração ilegal, o ponteiro q recebe os dados do ponteiro p ao invés do seu endereço.
+i = (*p)++ + *q; // Declaração ilegal, o operador ++ não funciona neste caso, o resultado final é um inteiro.
 
