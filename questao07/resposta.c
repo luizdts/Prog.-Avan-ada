@@ -10,5 +10,5 @@ int main(void){
   return 0;
 }
 
-resultado:
-valor de p: 2
+// resultado:
+// valor de p: 2
