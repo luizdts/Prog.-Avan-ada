@@ -7,7 +7,7 @@ int main(){
   printf("%d ",*(vet+i));   // impressão de cada elemento do vetor vet.
   }
 }
-resultado: 4 9 13 
+// resultado: 4 9 13 
 
 // Programa 2: imprime os endereços de memória onde estão localizados os valores do vetor vet.
 
@@ -18,5 +18,5 @@ int main(){
   printf("%X ",vet+i); // impressão de cada endereço de memória do vetor.
   }
 }
-resultado: 62FE10 62FE14 62FE18 
+// resultado: 62FE10 62FE14 62FE18 
 
