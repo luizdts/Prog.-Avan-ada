@@ -26,12 +26,12 @@ int main(void){
   printf("%.1f \n", temp);  
 
   /* (c) */
-  p3 = &nome[0];       // ok
+  p3 = &nome[0];       // ok, resultado P
   aux = *p3;
   printf("%c \n", aux);
 
   /* (d) */
-  p3 = &nome[4];        // ok
+  p3 = &nome[4];        // ok, resultado e
   aux = *p3;    
   printf("%c \n", aux);
 
