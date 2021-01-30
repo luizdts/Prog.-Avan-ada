@@ -1,4 +1,4 @@
-O código para exibir os incrementos dos respectivos valores de x:
+// O código para exibir os incrementos dos respectivos valores de x:
 
 # include<stdlib.h>
 int main(){
