@@ -14,13 +14,13 @@ int main(void){
   int *p5;
 
   /* (a) */
-  valor = 10;           // ok
+  valor = 10;           // valor alterado de 10 para 20
   p1 = &valor;
   *p1 = 20;
   printf("%d \n", valor);
 
     /* (b) */
-  temp = 26.5;          // ok
+  temp = 26.5;          // valor alterado de 26.5 para 29.0
   p2 = &temp;
   *p2 = 29.0;
   printf("%.1f \n", temp);  
@@ -47,7 +47,7 @@ int main(void){
   p3--;                 // ok
   printf("%c \n", *p3);
 
-  /* (h) */             // ok
+  /* (h) */             // ok, o resultado é 31
   vetor[0] = 31;
   vetor[1] = 45;
   vetor[2] = 27;
@@ -55,29 +55,27 @@ int main(void){
   idade = *p4;
   printf("%d \n", idade);
 
-  /* (i) */             // ok
+  /* (i) */             // ok, resultado é 45
   p5 = p4 +1;
   idade = *p5;
   printf("%d \n", idade);
 
-  /* (j) */             // ok
+  /* (j) */             // ok, resultado é 27
   p4 = p5 +1;
   idade = *p4;
   printf("%d \n", idade);
 
-  /* (l) */             // ok
+  /* (l) */             // ok, resultado é 31
   p4 = p4 -2;
   idade = *p4;
   printf("%d \n", idade);
 
-  /* (m) */             // ok
+  /* (m) */             // ok, resultado é 45
   p5 = &vetor[2] - 1;
   printf("%d \n", *p5);
 
-  /* (n) */             // ok
+  /* (n) */             // ok, resultado é 27
   p5++;
   printf("%d \n", *p5);
   return(0);
-
-
 }
