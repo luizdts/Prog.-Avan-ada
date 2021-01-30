@@ -2,7 +2,7 @@
 int main(void){
   int vetor[5] = {1, 2, 3, 4, 5};
   printf("endereco do terceiro elemento: %d\n", &vetor+2); // captura do endereço de memória do terceiro elemento do vetor.
-  printf("valor do terceiro elemento: %d", vetor+2); // captura do valor do terceiro elemento do vetor.
+  printf("valor do terceiro elemento: %d", vetor+2); // captura do valor do terceiro elemento do vetor. Assim a resposta é "pulo+2".
 }
 resultado: 
 endereco do terceiro elemento: 6487592
