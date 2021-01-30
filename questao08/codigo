@@ -1,1 +1,21 @@
+// Programa 1: imprime todos os elementos do vetor vet.
 
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){   // estrutura de repetição para imprimir todos os elementos do vetor vet.
+  printf("%d ",*(vet+i));   // impressão de cada elemento do vetor vet.
+  }
+}
+resultado: 4 9 13 
+
+// Programa 2: imprime os endereços de memória onde estão localizados os valores do vetor vet.
+
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%X ",vet+i); // impressão de cada endereço de memória do vetor.
+  }
+}
+resultado: 62FE10 62FE14 62FE18 
