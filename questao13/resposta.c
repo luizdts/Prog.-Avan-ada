@@ -16,10 +16,10 @@ int main(){
     }
   for(j=0;j<x;j++){
     if(j == x-1){
-      printf("%.2f", p1[j]);
+      printf("%.2f\n", p1[j]);
     } 
     else {
-    printf("%.2f", p1[j]);
+    printf("%.2f\n", p1[j]);
     }
   }
   free(p1);
