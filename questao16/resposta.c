@@ -3,6 +3,8 @@
 // ela é responsável por medir os tempos iniciais e finais da execução do programa,
 // com isso também definimos variáveis específicas da biblioteca time.h
 // as variáveis devem ser declaradas com time(NULL)
+ 
+// durante a análise do tempo de execução dos programas, a função qsort apresenta tempo no valor de 0.004s ou 4 ms.
 
 
 # include <stdlib.h>
