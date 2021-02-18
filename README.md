@@ -4,3 +4,4 @@ Repositório para todos os arquivos da primeira unidade de Programação Avança
 
 # Integrantes:
  - Luiz Henrique Araújo Dantas
+ - Marcelo Cavalcanti de Medeiros Sobrinho
