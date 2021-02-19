@@ -14,7 +14,7 @@ int main(void){
   int *p5;
 
   /* (a) */
-  valor = 10;           // valor alterado de 10 para 20
+  valor = 10;           // valor alterado de: 10 para 20
   p1 = &valor;
   *p1 = 20;
   printf("%d \n", valor);
