@@ -1,6 +1,6 @@
 # include <stdlib.h>
 
-int check(const void *a, const void *b){ // compara e retorna o valor comparado, esse valor se trata de um inteiro
+int check(const void *a, const void *b){ // compara e retorna o valor comparado, este valor se trata de um inteiro
   return *(int*)a - *(int *)b; // função interna da função qsort
 }
 
