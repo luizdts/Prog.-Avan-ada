@@ -1,5 +1,5 @@
 int i=3,j=5;
-int *p, *q;
+int *p, *q;   
 p = &i;
 q = &j;
 
