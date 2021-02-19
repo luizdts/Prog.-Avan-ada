@@ -1,4 +1,4 @@
-# include <stdlib.h>
+# include <stdlib.h>   
 # include <stdio.h>
 
 void soma(int *v1, int *v2, int *v3, int t){
