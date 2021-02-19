@@ -1,37 +1,37 @@
 
-#include "gc.h"
+#include <gc.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-int compare(const void * a, const void * b) {
-    return ( (int)a - (int)b );
+int compara(const void * a, const void * b) {
+    return ((int)a - (int)b);
 }
 
-void SMalloc() {
+void SomaMalloc() {
     int n = 1000;
-    int *ptr;
-    ptr = (int*)malloc(n * sizeof(int));
+    int *p;
+    p= (int*)malloc(n * sizeof(int));
 
     srand(time(NULL));
     for(int j = 0; j < n; j++) {
-        *(ptr + j) = rand() % 100;
+        *(p+ j) = rand() % 100;
     }
 
-    qsort(ptr, n, sizeof(int), compare);
+    qsort(p, n, sizeof(int), compare);
 
-    free(ptr);
+    free(p);
 
 }
 
-void GcMalloc() {
+void MallocGC() {
     int n = 1000;
-    int *ptr;
+    int *p;
     ptr = (int*)GC_malloc(n * sizeof(int));
 
     srand(time(NULL));
     for(int j = 0; j < n; j++) {
-        *(ptr + j) = rand() % 100;
+        *(p + j) = rand() % 100;
     }
 
     qsort(arr, n, sizeof(int), compare);
