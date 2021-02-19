@@ -40,11 +40,11 @@ void GC() {
 
 int main() {
 
-    clock_t start_t, end_t;
+    clock_t tfinal, tinicial;
 
     int tempo = 100000000;
     tinicial = clock();
-    for(int i = 0; i < times; i++) {
+    for(int i = 0; i < tempo; i++) {
         SomaMalloc();
     }
     tfinal = clock();
@@ -52,12 +52,12 @@ int main() {
     printf("%d malloc: %fs\n", tempo, (double)(tfinal - tinicial) / CLOCKS_PER_SEC);
 
     tinicial = clock();
-    for(int i = 0; i < times; i++) {
+    for(int i = 0; i < tempo; i++) {
         GC();
     }
     tfinal = clock();
 
-    printf("%d Malloc do GC: %fs\n", times, (double)(tfinal - tinicial) / CLOCKS_PER_SEC);
+    printf("%d Malloc do GC: %fs\n", tempo, (double)(tfinal - tinicial) / CLOCKS_PER_SEC);
 
     return 0;
 }
