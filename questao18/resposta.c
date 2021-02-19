@@ -63,8 +63,6 @@ int main(){
 
 	
 	while (j1 != j2){
-		
-		printf("Erro! Verifique se a multiplicaçao eh possivel.\n");
 		printf("insira os valores de m1: ");
 		scanf("%d%d", &i1, &j1);
 		printf("insira os valores de m2: ");
