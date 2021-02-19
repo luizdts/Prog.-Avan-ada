@@ -1,2 +1,2 @@
-// A saída mostrada ao executar o código é : 62fe1c (Endereço hexadecimal), 7, 5, 15 e 9
+// A saída mostrada ao executar o código é: 62fe1c (Endereço hexadecimal), 7, 5, 15 e 9
 //
