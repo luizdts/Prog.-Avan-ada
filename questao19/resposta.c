@@ -4,13 +4,11 @@
 
 #include <gc/gc.h> // exportamos a biblioteca libGC
 
-int main()
-{
-    int i;
+int main(){
 
     GC_INIT(); // inicializamos a biblioteca do libGC
 
-    for (i = 0; i < 10000; ++i)
+    for (int i = 0; i < 10000; ++i)
     {
          int *p1 = (int *) GC_MALLOC(sizeof(int *)); // nota-se que não precisamos mais executar a linha de código referente ao malloc,
 // o libGC já faz isso internamente com essa função.
