@@ -18,7 +18,7 @@ int main()
          assert(*p1 == 0);
          *p1 = (int *) GC_REALLOC(q1, 2 * sizeof(int));
          if (i % 100000 == 0)
-           printf("Memória utilizada = %z \n", GC_get_heap_size());
+           printf("Memória utilizada = %z ", GC_get_heap_size());
     }
 
   return 0;
