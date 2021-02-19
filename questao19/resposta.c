@@ -1,8 +1,8 @@
 // exemplo prático
-
+#include <stdlib.h>
 #include <assert.h>
-#include <stdio.h>
-#include <gc/gc.h>
+
+#include <gc/gc.h> // exportamos a biblioteca libGC
 
 int main()
 {
