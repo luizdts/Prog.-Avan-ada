@@ -24,7 +24,7 @@ void SomaMalloc() {
 
 }
 
-void MallocGC() {
+void GC() {
     int n = 1000;
     int *p;
     ptr = (int*)GC_malloc(n * sizeof(int));
@@ -41,3 +41,23 @@ void MallocGC() {
 int main() {
 
     clock_t start_t, end_t;
+
+    int tempo = 100000000;
+    tinicial = clock();
+    for(int i = 0; i < times; i++) {
+        SomaMalloc();
+    }
+    tfinal = clock();
+
+    printf("%d malloc: %fs\n", tempo, (double)(tfinal - tinicial) / CLOCKS_PER_SEC);
+
+    tinicial = clock();
+    for(int i = 0; i < times; i++) {
+        GC();
+    }
+    tfinal = clock();
+
+    printf("%d Malloc do GC: %fs\n", times, (double)(tfinal - tinicial) / CLOCKS_PER_SEC);
+
+    return 0;
+}
